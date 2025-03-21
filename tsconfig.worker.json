@@ -1,0 +1,10 @@
+{
+  // Workers should extend this configuration then import the correct @cloudflare/workers-types according to the
+  // compatibility date in their `wrangler.toml`.
+  // See: https://www.npmjs.com/package/@cloudflare/workers-types
+  // See: https://github.com/cloudflare/worker-typescript-template/blob/master/tsconfig.json
+  // "compilerOptions": {
+  //   "types": ["@cloudflare/workers-types/{the-compatibility-date}"]
+  // },
+  "extends": "./tsconfig.base.json"
+}

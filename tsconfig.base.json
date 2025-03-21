@@ -1,0 +1,22 @@
+{
+  // See: https://github.com/tsconfig/bases/
+  // See: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#tsconfig-bases
+  "compilerOptions": {
+    "isolatedModules": true,
+    // In addition to the base functionality of ES2015/ES6, ES2022 adds support for dynamic imports, and import.meta
+    // while ES2022 further adds support for top level await.
+    // See: https://www.typescriptlang.org/tsconfig#high-level-libraries
+    "lib": ["ES2022"],
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // When `true` TS cannot resolve @vue/runtime-dom or @vue/runtime-core from Vue when building i18n.
+    "preserveSymlinks": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022"
+  }
+}
