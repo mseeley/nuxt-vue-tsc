@@ -1,22 +1,26 @@
 {
-  "name": "wtf-workspace",
-  "version": "1.0.0",
-  "license": "UNLICENSED",
+  "name": "nuxt-app",
   "private": true,
   "type": "module",
   "scripts": {
-    "clean": "git clean -dfX"
+    "_tc": "nuxi typecheck",
+    "_vtsc": "vue-tsc --noEmit",
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "preinstall": "npx only-allow pnpm",
+  "dependencies": {
+    "typed-assert": "1.0.9"
+  },
   "devDependencies": {
+    "nuxt": "3.16.1",
     "vue-tsc": "2.2.8"
   },
-  "engines": {
-    "node": "20.17.0"
-  },
   "volta": {
-    "node": "20.17.0",
-    "pnpm": "8.15.4"
+    "node": "22.14.0",
+    "pnpm": "10.6.5"
   },
-  "packageManager": "pnpm@8.15.4"
+  "packageManager": "pnpm@10.6.5"
 }
