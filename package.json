@@ -7,12 +7,15 @@
     "dev": "HOST=0.0.0.0 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "tc": "vue-tsc --noEmit",
+    "tcw": "vue-tsc --noEmit --watch"
   },
   "dependencies": {
     "typed-assert": "1.0.9"
   },
   "devDependencies": {
-    "nuxt": "3.16.0"
+    "nuxt": "3.16.1",
+    "vue-tsc": "2.2.8"
   }
 }
